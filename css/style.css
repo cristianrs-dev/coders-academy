@@ -147,8 +147,8 @@ header {
 }
 
 .card {
-    margin:1.5rem;
-    padding: 0.5rem; /* Ajustado para mais espaçamento interno */
+    margin:0.3rem;
+    padding:0.5rem; /* Ajustado para mais espaçamento interno */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
     border-radius: 8px; /* Cantos arredondados para um design mais suave */
     flex: 1 0 21%;

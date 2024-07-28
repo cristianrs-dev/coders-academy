@@ -1,3 +1,25 @@
+@media (max-width: 320px) {
+    /* Estilos para dispositivos móveis pequenos */
+    .navbar{
+        display: none;
+    }
+    #hamburger{
+        display: block;
+    }
+    .banner{
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .box-titulo{
+        max-width: 300px;
+    }
+    .servicos{
+        flex-direction: column;
+    }
+
+  }
+
 @media (max-width: 360px) {
     /* Estilos para dispositivos móveis pequenos */
     .navbar{

@@ -129,9 +129,7 @@ header {
 .btn-acao{
     background-color:#F87C49;
     color:#ffffff;
-   
     padding: 10px;
-    
     border-radius: 5px;
     font-size:1rem;
     text-decoration: none;
@@ -139,16 +137,20 @@ header {
 }
 
 .servicos {
+   
     display:flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
     padding-top: 50px;
 }
 
 .card {
-    margin:0.3rem;
-    padding:0.5rem; /* Ajustado para mais espaçamento interno */
+    width:90%;
+    height:400px;
+    margin: 0.5rem;
+    padding: 0.4rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
     border-radius: 8px; /* Cantos arredondados para um design mais suave */
     flex: 1 0 21%;
@@ -165,7 +167,10 @@ header {
 .card h3 {
     margin-bottom: 0.5rem;
 }
-
+.img-service{
+    width: 100%;
+    height: auto;
+}
 .faq {
     background-color: #fff;
     padding: 2rem;

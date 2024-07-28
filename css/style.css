@@ -15,12 +15,11 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: relative;
     text-transform: uppercase;
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .navbar {
@@ -48,17 +47,40 @@ header {
     box-sizing: border-box;
 }
 
-.hamburger {
-    display: none;
-    flex-direction: column;
+#hamburger {
+    display:none;
     cursor: pointer;
 }
 
-.hamburger .bar {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 3px 0;
+.line {
+    background-color: white;
+    height:10px;
+    width: 50px;
+    padding: 1px;
+    margin: 4px 0;
+    border-radius: 3px;
+      text-decoration: none;
+}
+#menu-mobile{
+    background-color:#2F3542;
+    display: none;
+    margin: 0;
+}
+
+#menu-mobile li{
+    text-decoration:none;
+    list-style: none;
+    padding: 10px;
+}
+
+#menu-mobile li > a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    text-transform: uppercase;
+}
+#menu-mobile li:hover{
+    background-color: #F87C49;
 }
 
 .whatsapp-fixo {
@@ -81,12 +103,12 @@ header {
 }
 
 .banner {
-    width: 100%;
     background-color:#00a8ff;
-    height: 400px;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding-bottom: 50px;
 }
 .box-titulo{
    
@@ -96,6 +118,9 @@ header {
 .copy{
     color:#ffffff;
     font-size: 1.5rem;
+}
+.img-banner{
+    width: 100%;
 }
 .box-btn-acao{
     margin-top: 50px;
@@ -113,30 +138,28 @@ header {
     text-transform: uppercase;
 }
 
-.carrossel {
-    padding: 2rem;
-}
-.img-carrossel{
-    width:100%;
-    height: auto;
-    box-sizing: border-box;
-}
-
-
 .servicos {
-    display: flex;
+    display:flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
 }
 
 .card {
-    margin: 1rem;
-    padding: 1rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin:1.5rem;
+    padding: 0.5rem; /* Ajustado para mais espaçamento interno */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+    border-radius: 8px; /* Cantos arredondados para um design mais suave */
     flex: 1 0 21%;
     box-sizing: border-box;
     text-align: center;
+    background-color: #ffffff; /* Cor de fundo do card */
+    transition: box-shadow 0.3s ease; /* Animação suave para o hover */
+}
+
+.card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra maior ao passar o mouse */
 }
 
 .card h3 {
@@ -258,6 +281,7 @@ max-width: 50px;
 .btn-white {
     background-color:#F87C49;
     color: #ffffff;
+    position: relative;
 }
 
 .btn::after {
@@ -283,7 +307,7 @@ max-width: 50px;
 }
 
 .btn-animated {
-    animation: moveInBottom 20s ease-out infinite;
+    animation: moveInBottom 50s ease-out infinite;
     animation-fill-mode: backwards;
 }
 

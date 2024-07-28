@@ -1,10 +1,98 @@
-@media (max-width: 1024px) {
+@media (max-width: 360px) {
+    /* Estilos para dispositivos móveis pequenos */
+    .navbar{
+        display: none;
+    }
+    #hamburger{
+        display: block;
+    }
+    .banner{
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .box-titulo{
+        max-width: 400px;
+    }
+    .servicos{
+        flex-direction: column;
+    }
+
+  }
+@media (max-width: 480px) {
+    /* Estilos para dispositivos móveis pequenos */
+    .navbar{
+        display: none;
+    }
+    #hamburger{
+        display: block;
+    }
+    .banner{
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .box-titulo{
+        max-width: 400px;
+    }
+    .servicos{
+        flex-direction: column;
+    }
+
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    /* Estilos para dispositivos móveis em paisagem */
+    .navbar{
+        display: none;
+    }
+    #hamburger{
+        display: block;
+    }
+    .banner{
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .box-titulo{
+        max-width: 400px;
+    }
+    .servicos{
+        flex-direction: column;
+    }
+
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    /* Estilos para tablets */
+   
+  }
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    /* Estilos para laptops e desktops pequenos */
+   
+  }
+
+  @media (min-width: 1281px) {
+    /* Estilos para desktops grandes */
+   
+  }
+  
+  
+
+/*@media (max-width: 1024px) {
     .card {
         flex: 1 0 45%;
     }
 }
 
 @media (max-width: 768px) {
+    .navbar{
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
     .nav-list {
         display: none;
         flex-direction: column;
@@ -45,13 +133,49 @@
 }
 
 @media (max-width: 480px) {
-    .banner img {
-        height: 200px;
-        object-fit: cover;
+    .navbar{
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-list li {
+        margin: 1rem 0;
+    }
+
+    .nav-list li a {
+        padding: 1rem;
+        display: block;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .servicos {
+        flex-direction: column;
+        align-items: center;
     }
 
     .card {
-        flex: 1 0 100%;
+        flex: 1 0 80%;
+        margin: 1rem 0;
     }
 }
 
+*/

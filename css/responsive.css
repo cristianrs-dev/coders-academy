@@ -23,6 +23,13 @@
         max-width: 50%;
         height: auto;
     }
+    .contato{
+        flex-direction: column;
+        
+    }
+    .box-acao{
+        padding-top: 50px;
+    }
 
   }
 
@@ -45,7 +52,12 @@
     .servicos{
         flex-direction: column;
     }
-
+    .contato{
+        flex-direction: column;
+    }
+    .box-acao{
+        padding-top: 50px;
+    }
   }
 @media (max-width: 480px) {
     /* Estilos para dispositivos móveis pequenos */
@@ -66,7 +78,12 @@
     .servicos{
         flex-direction: column;
     }
-
+    .contato{
+        flex-direction: column;
+    }
+    .box-acao{
+        padding-top: 50px;
+    }
   }
 
   @media (min-width: 481px) and (max-width: 767px) {
@@ -87,6 +104,12 @@
     }
     .servicos{
         flex-direction: column;
+    }
+    .contato{
+        flex-direction: column;
+    }
+    .box-acao{
+        padding-top: 50px;
     }
 
   }

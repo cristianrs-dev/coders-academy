@@ -172,17 +172,54 @@ header {
     height: auto;
 }
 .faq {
-    background-color: #fff;
-    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            max-width: 800px;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
 }
 
 .faq-item {
+   
     margin-bottom: 1rem;
 }
 
+
 .contato {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     background-color: #fff;
     padding: 2rem;
+    text-align: justify;
+}
+
+.box-foto{
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+}
+.img-perfil{
+    max-width: 200px;
+    height: auto;
+    position: relative;
+    left: 50px;
+}
+.box-sobre{
+   
+    max-width: 400px;
+}
+.box-acao{
+    
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 form {

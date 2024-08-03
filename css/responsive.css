@@ -3,7 +3,7 @@
     .navbar{
         display: none;
     }
-    #hamburger{
+    .menuMobile{
         display: block;
     }
     .banner{
@@ -38,7 +38,7 @@
     .navbar{
         display: none;
     }
-    #hamburger{
+    .menuMobile{
         display: block;
     }
     .banner{
@@ -64,7 +64,7 @@
     .navbar{
         display: none;
     }
-    #hamburger{
+    .menuMobile{
         display: block;
     }
     .banner{
@@ -91,7 +91,7 @@
     .navbar{
         display: none;
     }
-    #hamburger{
+    .menuMobile{
         display: block;
     }
     .banner{

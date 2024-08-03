@@ -16,6 +16,7 @@ header {
     justify-content: space-around;
     align-items: center;
     text-transform: uppercase;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -47,41 +48,95 @@ header {
     box-sizing: border-box;
 }
 
-#hamburger {
-    display:none;
+
+
+/*************************************/
+#close-btn{
+    position:relative;
+    top: 0;
+    left: 70px;
+    border-radius:10px;
+}
+.menuMobile{
+    display: none;
     cursor: pointer;
 }
 
 .line {
     background-color: white;
-    height:10px;
+    height:7px;
     width: 50px;
     padding: 1px;
     margin: 4px 0;
     border-radius: 3px;
-      text-decoration: none;
-}
-#menu-mobile{
-    background-color:#2F3542;
-    display: none;
-    margin: 0;
+    text-decoration: none;
 }
 
-#menu-mobile li{
-    text-decoration:none;
-    list-style: none;
+
+.sidebar {
+   
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Inicialmente escondido */
+    background-color:#2F3542;
+    color: #fff;
+    padding: 15px;
+    transition: left 0.3s ease; /* Transição suave para a animação */
+    z-index: 1000;
+}
+
+.sidebar.show {
+    left: 0; /* Mostra o painel quando a classe 'show' é adicionada */
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
     padding: 10px;
 }
 
-#menu-mobile li > a{
-    text-decoration: none;
-    list-style: none;
-    color: white;
-    text-transform: uppercase;
-}
-#menu-mobile li:hover{
+.sidebar ul li a:hover {
     background-color: #F87C49;
 }
+
+.sidebar button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebar button:hover {
+    background-color: #575757;
+}
+
+
+
+/**************************************/
+
+
+
+
+
 
 .whatsapp-fixo {
     position: fixed;
